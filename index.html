@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My first web page</title>
+        <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src = https://code.jquery.com/jquery-1.10.2.js></script>
+    </head>
+    <body>
+        <!--Navigator bar-->
+        <div id = "navbar"></div>
+        <script>
+            $(function (){
+                $("#navbar").load("navbar.html")
+            })
+        </script>
+        <!--Home page-->
+        <div class = "jumbotron text-center">
+            <h1>Welcome to my webpage</h1>
+            <p>We are the best backend course</p>
+            <form class = "form-inline">
+                <div class = "input-group">
+                    <input type = "email" class = "form-control", size = "50" placeholder = "Email adress" required>
+                    <div class = "input-group-btn">
+                        <button class = "btn btn-danger"> Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
